@@ -38,19 +38,23 @@ public class SolveMaze {
                 maze.turnRight();
                 if (maze.canMove()) {
                     maze.move();
-                    maze.turnLeft();
+                    continue;
                 }
+                    maze.turnLeft();
                 if (maze.canMove()) {
                     maze.move();
-                    maze.turnLeft();
+                    continue;
                 }
+                    maze.turnLeft();
                 if (maze.canMove()) {
                     maze.move();
+                    continue;
+                }
                     maze.turnLeft();
                     maze.move();
                 }
             }
-        }
+        
 
 
         if (maze.isFinished()) {
